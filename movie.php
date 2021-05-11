@@ -51,7 +51,7 @@
      echo 'Titolo: ' .$filmC->titolo .'<br>' .'Trama: ' .$filmC->trama .'<br>' .'Anno di uscita: '.$filmC->anno .'<br>'.'Sconto applicato: ' .$filmC->setSconto($filmC->eta_user);
 
 
-     $Films = [$filmA,$filmB,$filmC]
+     $films = [$filmA,$filmB,$filmC];
 
 
 ?>
@@ -68,10 +68,10 @@
 
     <h1>Movies</h1>
         <div class="movie">
-            <?php foreach ($Films as $film){?>
+            <?php foreach ($films as $film){?>
                 <h3><?php $film->titolo ?></h3>
                 <p>Trama:<?php $film->trama ?></p>
-                <p>Anno uscita:<?php $film->trama ?></p>
+                <p>Anno uscita:<?php $film->anno ?></p>
            <?php } ?>
         
         </div>
